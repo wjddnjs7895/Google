@@ -3,5 +3,5 @@
     font-style: normal;
     font-weight: 400;
     src: local('Roboto'), local('Roboto-Regular'),
-        url(chrome://resources/roboto/roboto-regular.woff2) format('woff2');
+        url(../resources/roboto-regular.woff2) format('woff2');
 }
