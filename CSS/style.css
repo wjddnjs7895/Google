@@ -1,0 +1,206 @@
+@import url(../CSS/roboto.css);
+
+#content{
+    height : 300px;
+}
+
+body{
+    font-size: 100%;
+}
+
+#toolbar-text{
+    display : inline;
+    position : absolute;
+    width : 200px;
+    height : 30px;
+    top : 22px;
+    right : 110px;
+    text-align : right;
+    word-spacing : 15px;
+    font-size : 85%;
+}
+
+#toolbar-img{
+    display : inline-block;
+    position : absolute;
+    width : 80px;
+    top : 15px;
+    right : 15px;
+    text-align : right;
+    word-spacing : 15px;
+    font-size : 85%;
+}
+#app{
+    max-width : 28px;
+}
+
+#id-img{
+    width : 30px;
+    height : 30px;
+    border-radius : 50%;
+}
+
+
+
+#title{
+    position : absolute;
+    top : 30%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+#searchbar{
+    position : absolute;
+    top : 45%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+#searchbar-background{
+    position : relative;
+    width : 560px;
+    height : 45px;
+    border-radius : 40px;
+    border : 0px;
+    box-shadow : 1px 1px 8px 1px rgba(0, 0, 0, 0.15);
+}
+
+#searchbar-background input{
+    font-size : 100%;
+    position : absolute;
+    width : 480px;
+    height : 30px;
+    left : 45px;
+    margin : 8px 0px;
+    border : none;
+}
+
+#searchbar-background input::placeholder{
+    font-family: Roboto, 'Segoe UI',Arial,'Malgun Gothic',Gulim,sans-serif;
+    font-size: 90%;
+    color : gray;
+    font-weight : normal;
+}
+
+#searchbar-background input:focus{
+    outline : none;
+}
+
+#searchbar-background input::-ms-clear,
+input::-ms-reveal {display: none; width : 0; height: 0;}
+
+#searchbar-background input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+#search-tool{
+    width : 20px;
+    height : 20px;
+    position : absolute;
+    top : 50%;
+    left : 5%;
+    transform : translate(-50%, -50%);
+}
+
+#mic{
+    width : 20px;
+    height : 20px;
+    position : absolute;
+    top : 50%;
+    right : 4px;
+    transform : translate(-50%, -50%);
+}
+
+#container{
+    margin : 370px auto;
+    width : 400px;
+    height : 200px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tile{
+    display : block;    
+    position : relative;
+    width: 100px;
+    height : 100px;
+    border-radius : 3px;
+}
+
+.tile:hover{
+    background : rgba(128, 128, 128, 0.2);
+}
+
+.tile:hover::after{
+    content : "";
+    background-image : url("../images/tool_bar/icon_more_vert.svg");
+    background-size : 20px 20px;
+    opacity : 0.5;
+    width : 20px;
+    height : 20px;
+
+    position : absolute;
+    top : 7%;
+    left : 75%;
+}
+
+.tile-icon{
+    position : relative;
+    text-align : center;
+    margin-top : 25px; 
+    z-index: 0;
+}
+
+.tile-icon::after{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -55%);
+    content : "";
+    width : 48px;
+    height: 48px;
+    border-radius : 50%;
+    background-color : rgb(241,243,244, 1);
+    z-index: -1;
+}
+
+.tile-name{
+    text-align : center;
+    margin-top : 20px;
+    font-size : 13px;
+}
+
+a{
+    text-decoration : none;
+    color : black;
+}
+
+#settings{
+    display : block;
+    position : absolute;
+    color : rgb(57, 143, 255);
+    font-size : 85%;
+    width : 150px;
+    height : 30px;
+    border-radius : 20px;
+    box-shadow : 1px 1px 4px  rgba(0, 0, 0, 0.35);
+    text-align : center;
+    top : 92%;
+    left : 88%;
+}
+
+#settings span{
+    display : inline-block;
+    margin-bottom : 10%;
+}
+
+#pencil{
+    margin-top : 1px;
+    transform : translate(0, 4px);
+    width : 17px;
+    height : 17px;
+    filter: invert(45%) sepia(63%) saturate(1800%) hue-rotate(180deg)
+	brightness(75%) contrast(120%);
+}
